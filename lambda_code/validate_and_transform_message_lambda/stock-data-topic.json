@@ -1,0 +1,15 @@
+{
+    "required_columns": ["ticker_symbol", "sector", "change", "price"],
+    "rename_columns": {
+        "ticker_symbol": "ticker_symbol_with_suffix",
+        "sector": "sector_with_suffix",
+        "change": "change_with_suffix",
+        "price": "price_with_suffix"
+    },
+    "cast_values": {
+        "ticker_symbol_with_suffix": "str",
+        "sector_with_suffix": "str",
+        "change_with_suffix": "float",
+        "price_with_suffix": "int"
+    }
+}
